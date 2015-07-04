@@ -23,7 +23,7 @@ public class Yml_comparer {
      */
     public static void main(String[] args) throws InterruptedException {
         if (args.length < 2) {
-            System.out.println("usage: [old-file] [new-file]");
+            usage();
         } else {
             System.out.println("comparing " + args[0] + " to " + args[1]);
             ConcurrentSkipListMap<String, OfferHash> _map = new ConcurrentSkipListMap<>();
